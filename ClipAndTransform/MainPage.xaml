@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ClipAndTransform.MainPage"
+    BackgroundColor="#282828">
+    <Grid>
+        <BoxView
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            WidthRequest="150"
+            HeightRequest="150"
+            Color="Goldenrod"
+            Scale="0.8">
+            <BoxView.Clip>
+                <EllipseGeometry
+                    RadiusX="75"
+                    RadiusY="75">
+                    <EllipseGeometry.Center>
+                        <Point
+                            X="75"
+                            Y="75"></Point>
+                    </EllipseGeometry.Center>
+                </EllipseGeometry>
+            </BoxView.Clip>
+        </BoxView>
+    </Grid>
+</ContentPage>
